@@ -13,7 +13,6 @@ const ExpenseItem = (props) => {
     const clickHandler = () => {
         setTitle('Updated!!')
     }
-    console.log(typeof props.amount)
     const [amount, setAmount] = useState(props.amount)
     const amountHandler = () => {
         setAmount(amount+1)
