@@ -18,7 +18,8 @@ const ExpenseForm = (props) => {
   };
 
   const amountChangeHandler = (event) => {
-    setEnteredAmount(parseInt(event.target.value));
+    // setEnteredAmount(parseFloat(event.target.value));
+    setEnteredAmount(event.target.value);
     // setUserInput((prevState) => {
     //   return {...prevState, enteredAmount: event.target.value}
     // });
@@ -35,12 +36,11 @@ const ExpenseForm = (props) => {
     event.preventDefault();
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
       id: Math.random().toString()
     };
     props.onSaveExpenseData(expenseData);
-    console.log(expenseData);
     setEnteredTitle('');
     setEnteredAmount('');
     setEnteredDate('');
