@@ -1,8 +1,8 @@
-# Burger Builder
-### React/Redux burger ordering application
+# Shopping Cart List
+### React Shopping Cart List application
 
 
-React.js / Redux / React-Router / JavaScript
+React.js / JavaScript
 
 URL: https://saint1225.github.io/ShoppingCart-list/
 
